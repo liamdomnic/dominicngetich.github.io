@@ -381,10 +381,12 @@ header{
 
 	display: flex;
 	flex-direction: column;
-	flex-wrap: wrap;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: center;
 	padding:50px; 
+	align-items: center;
+	justify-items:center;
+
 
 
 
@@ -464,22 +466,21 @@ footer{
 
 
 @media(max-width: 768px){
-	/*header #branding,
-	header nav,
-	header li,
-	#newsletter h1,
-	#newsletter form,
-	#boxes .box,
-	article#main-col,
-	aside#sidebar{
-		float: none;
-		text-align: center;
-		width: 100%;
-	}*/
+	
+	body{
+		user-select: none;
+		
+	}
+
 	header{
 		width: 100%;
 		display: flex;
 		justify-content: center;
+	}
+
+	.name-logo{
+		width: 100%;
+		transition: none;
 	}
 
 	.nav{
@@ -488,6 +489,15 @@ footer{
 	.brand-name{
 		text-align: center;
 	}
+
+	.landing-page h1, .landing-page p{
+		margin-top: 10px;
+	} 
+
+	.sendmail{
+	width: 100%;
+	
+}
 
 .vl{
 	display: none;
@@ -505,6 +515,8 @@ footer{
 	display: grid;
 	grid-template-columns: repeat(1,1fr);
 	justify-content: center;
+	align-items: center;
+	justify-items:center;
 	}
 
 
